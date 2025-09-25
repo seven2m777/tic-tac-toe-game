@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <main class="card" role="main">
+      <header class="header">
+        <h1 class="title">Tic Tac Toe</h1>
+        <div class="controls">
+          <select id="mode" class="select" aria-label="game mode">
+            <option value="pvp">Player vs Player</option>
+            <option value="pvc">Player vs Computer</option>
+          </select>
+          <button id="reset" class="button-primary">New Game</button>
+        </div>
+      </header>
+
+      <div class="status">Turn: <strong id="turn">X</strong></div>
+      <div id="board" class="grid" role="grid" aria-label="Tic Tac Toe board"></div>
+
+      <div class="footer">
+        <div class="small">Click a cell or press keys 1–9</div>
+        <div id="message" class="result" aria-live="polite"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
